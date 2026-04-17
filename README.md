@@ -1,9 +1,8 @@
-# 📊 Weekly Branch Sales Dashboard — Power BI
+# 📊 Weekly Branch Sales Dashboard — Tableau and Excel
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![Domain](https://img.shields.io/badge/Domain-Insurance%20%2F%20BFSI-red)
 
-A fully interactive **weekly branch performance dashboard** built in Power BI for an **insurance/financial services branch**. This report helps branch managers and team leads monitor sales pipeline health, achievement percentages, meeting activity, invoice counts, and opportunity revenue — all filterable by Account Executive.
+
+A fully interactive **weekly branch performance dashboard** built in Tableau & Excel for Visualization for an **insurance/financial services branch**. This report helps branch managers and team leads monitor sales pipeline health, achievement percentages, meeting activity, invoice counts, and opportunity revenue — all filterable by Account Executive.
 
 ---
 
@@ -149,4 +148,4 @@ weekly-branch-dashboard/
 ---
 
 
-This project is licensed under the MIT License.
+
