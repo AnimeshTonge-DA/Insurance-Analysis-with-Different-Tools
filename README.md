@@ -8,7 +8,7 @@ A fully interactive **weekly branch performance dashboard** built in Tableau & E
 
 ## 🖼️ Dashboard Preview
 
-> <h3>Tableau Dashboard</h3><img width="1916" height="1079" alt="Screenshot 2026-04-13 101742" src="https://github.com/user-attachments/assets/66dd88f6-3ccf-4c55-a47f-eb7593044782" /></h3
+> <h3>Power Bi Dashboard</h3><img width="1423" height="800" alt="Screenshot 2026-06-02 191630" src="https://github.com/user-attachments/assets/c6e5f286-a8ca-49f0-80da-5dc9f98d7200" /></h3
 > <h3>Tableau Dashboard</h3><img width="1916" height="1079" alt="Screenshot 2026-04-13 101742" src="https://github.com/user-attachments/assets/66dd88f6-3ccf-4c55-a47f-eb7593044782" /></h3>
 
 
