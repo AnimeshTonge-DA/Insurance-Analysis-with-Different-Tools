@@ -2,7 +2,7 @@
 
 SELECT
     CONCAT(ROUND(
-        (SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'New') /
+        (SELECT SUM(Amount) FROM brokerage WHERE income_class = 'New') /
         (SELECT SUM(New_Budget) FROM individual_budget) * 100, 2), '%') 
     AS New_Placed_Achievement_Pct,
 
@@ -12,7 +12,7 @@ SELECT
     AS New_Invoice_Achievement_Pct,
 
     CONCAT(ROUND(
-        (SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'Cross_Sell') /
+        (SELECT SUM(Amount) FROM brokerage WHERE income_class = 'Cross_Sell') /
         (SELECT SUM(Cross_sell_bugdet) FROM individual_budget) * 100, 2), '%') 
     AS Cross_Sell_Placed_Achievement_Pct,
 
@@ -22,7 +22,7 @@ SELECT
     AS Cross_Sell_Invoice_Achievement_Pct,
 
     CONCAT(ROUND(
-        (SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'Renewal') /
+        (SELECT SUM(Amount) FROM brokerage WHERE income_class = 'Renewal') /
         (SELECT SUM(Renewal_Budget) FROM individual_budget) * 100, 2), '%') 
     AS Renewal_Placed_Achievement_Pct,
 
@@ -36,7 +36,7 @@ SELECT
     -- NEW
     CONCAT(ROUND((SELECT SUM(New_Budget) FROM individual_budget) / 1000000, 2), 'M')
         AS New_Target,
-    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'New') / 1000000, 2), 'M')
+    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage WHERE income_class = 'New') / 1000000, 2), 'M')
         AS New_Achieved_Revenue,
     CONCAT(ROUND((SELECT SUM(Amount) FROM Invoice WHERE income_class = 'New') / 1000000, 2), 'M')
         AS New_Invoice,
@@ -44,7 +44,7 @@ SELECT
     -- CROSS SELL
     CONCAT(ROUND((SELECT SUM(Cross_sell_bugdet) FROM individual_budget) / 1000000, 2), 'M')
         AS Cross_Sell_Target,
-    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'Cross_Sell') / 1000000, 2), 'M')
+    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage WHERE income_class = 'Cross_Sell') / 1000000, 2), 'M')
         AS Cross_Sell_Achieved_Revenue,
     CONCAT(ROUND((SELECT SUM(Amount) FROM Invoice WHERE income_class = 'Cross_Sell') / 1000000, 2), 'M')
         AS Cross_Sell_Invoice,
@@ -52,7 +52,7 @@ SELECT
     -- RENEWAL
     CONCAT(ROUND((SELECT SUM(Renewal_Budget) FROM individual_budget) / 1000000, 2), 'M')
         AS Renewal_Target,
-    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage_fees_updated_short WHERE income_class = 'Renewal') / 1000000, 2), 'M')
+    CONCAT(ROUND((SELECT SUM(Amount) FROM brokerage WHERE income_class = 'Renewal') / 1000000, 2), 'M')
         AS Renewal_Achieved_Revenue,
     CONCAT(ROUND((SELECT SUM(Amount) FROM Invoice WHERE income_class = 'Renewal') / 1000000, 2), 'M')
         AS Renewal_Invoice;
